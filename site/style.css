@@ -1,14 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #222;
     margin: 0;
     padding: 0;
 }
 header {
-    background: #222;
+    background: transparent;
     color: #fff;
-    padding: 20px 0;
+    padding: 0;
     text-align: center;
+}
+/* Nome estilizado da concessionária */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #ffd700;
+    text-shadow: 2px 2px 8px #222;
 }
 nav ul {
     list-style: none;
@@ -26,7 +34,7 @@ nav a {
 main {
     max-width: 1000px;
     margin: 30px auto;
-    background: #fff;
+    background: rgba(34,34,34,0.7);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -58,7 +66,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }

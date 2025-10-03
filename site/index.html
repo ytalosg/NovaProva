@@ -4,20 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoCar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>AutoCar</h1>
-        <nav>
-            <ul>
-                <li><a href="#esportivos">Carros Esportivos</a></li>
-                <li><a href="#populares">Carros Populares</a></li>
-                <li><a href="#comuns">Carros Comuns</a></li>
-            </ul>
-        </nav>
+    <header class="bg-dark text-white p-0">
+        <div id="carrosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Showroom de carros">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Carros esportivos">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1461632830798-3adb3034e4c8?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Carros populares">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Carros comuns">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+        <div class="text-center py-3" style="background: rgba(0,0,0,0.7);">
+            <h1 style="font-family: 'Orbitron', sans-serif; font-size: 3rem; letter-spacing: 2px; color: #ffd700; text-shadow: 2px 2px 8px #222;">AutoCar</h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a href="#esportivos" class="nav-link text-warning">Carros Esportivos</a></li>
+                    <li class="nav-item"><a href="#populares" class="nav-link text-warning">Carros Populares</a></li>
+                    <li class="nav-item"><a href="#comuns" class="nav-link text-warning">Carros Comuns</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+    <main style="background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed; min-height: 80vh;">
         <section id="esportivos">
             <h2>Carros Esportivos</h2>
             <div class="car-list" id="carros-esportivos"></div>
@@ -31,9 +59,10 @@
             <div class="car-list" id="carros-comuns"></div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 GregorisCar</p>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2025 AutoCar</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
